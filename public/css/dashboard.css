@@ -1,0 +1,161 @@
+body {
+	font-size: 0.875rem;
+}
+
+.feather {
+	width: 16px;
+	height: 16px;
+	vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 100;
+	padding: 48px 0 0;
+	box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+@media (max-width: 767.98px) {
+	.sidebar {
+		top: 2rem;
+	}
+}
+
+.sidebar-sticky {
+	position: relative;
+	top: 0;
+	height: calc(100vh - 48px);
+	padding-top: 0.5rem;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.sidebar .nav-link {
+	font-weight: 480;
+	color: rgb(37, 37, 37);
+	cursor: pointer;
+}
+
+.sidebar .nav-link:hover {
+	color: #2470dc;
+}
+
+.sidebar .nav-link .feather {
+	margin-right: 4px;
+	color: #c0c0c0;
+}
+
+.sidebar .nav-link.active {
+	color: #2470dc;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+	color: #2470dc;
+}
+
+.sidebar-heading {
+	font-size: 0.75rem;
+	text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+	padding-top: 0.75rem;
+	padding-bottom: 0.65rem;
+	font-size: 1rem;
+	background-color: transparent;
+	margin-bottom: 4px;
+}
+
+.navbar .navbar-toggler {
+	top: 0.25rem;
+	right: 1rem;
+}
+
+.navbar .form-control {
+	padding: 0.75rem 1rem;
+	border-width: 0;
+	border-radius: 0;
+}
+
+.form-control-dark {
+	color: #fff;
+	background-color: rgba(255, 255, 255, 0.1);
+	border-color: rgba(255, 255, 255, 0.1);
+}
+
+.form-control-dark:focus {
+	border-color: transparent;
+	box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.25);
+}
+
+.brand-img {
+	background-image: url('../images/covid.png');
+	background-size: contain;
+	outline: none;
+	width: 22px;
+	height: 22px;
+	display: inline-flex;
+}
+
+.scrollbar-dusty-grass::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+	background-color: #f5f5f5;
+	border-radius: 10px;
+}
+
+.scrollbar-dusty-grass::-webkit-scrollbar {
+	width: 7px;
+	background-color: #f5f5f5;
+}
+
+.scrollbar-dusty-grass::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+	background-image: -webkit-linear-gradient(330deg, #fafcf7 0%, #e3e6e4 100%);
+	background-image: linear-gradient(120deg, #f8faf4 0%, #e6ece7 100%);
+}
+
+.square::-webkit-scrollbar-track {
+	border-radius: 0 !important;
+}
+
+.square::-webkit-scrollbar-thumb {
+	border-radius: 0 !important;
+}
+
+.thin::-webkit-scrollbar {
+	width: 3px;
+}
+
+.card-icon {
+	/* font-size: 1.5rem; */
+	background: transparent;
+	width: 100%;
+	text-align: left;
+}
+
+.card-icon-color-cases {
+	color: #ed8f04;
+}
+
+.card-icon-color-deaths {
+	color: #f70a44;
+}
+
+.card-icon-color-recovered {
+	color: #4bbe25;
+}
